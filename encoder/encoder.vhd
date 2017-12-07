@@ -50,9 +50,9 @@ END COMPONENT;
 
 BEGIN
 -- 1st level XOR SIGNALS
-blk1_2: 		xor2_1 PORT MAP (a(1), 	a(2),  xor1w2);  
+blk1_2: 	xor2_1 PORT MAP (a(1), 	a(2),  xor1w2);  
 blk7_14: 	xor2_1 PORT MAP (a(7), 	a(14), xor7w14); 
-blk0_6: 		xor2_1 PORT MAP (a(0), 	a(6),  xor0w6);  
+blk0_6: 	xor2_1 PORT MAP (a(0), 	a(6),  xor0w6);  
 blk13_15:	xor2_1 PORT MAP (a(13), a(15), xor13w15); 
 blk9_13: 	xor2_1 PORT MAP (a(9), 	a(13), xor9w13);  
 blk5_12: 	xor2_1 PORT MAP (a(5), 	a(12), xor5w12);  
@@ -66,14 +66,14 @@ blk5_10:  	xor2_1 PORT MAP (a(5), 	a(10), xor5w10);
 blk4_9:  	xor2_1 PORT MAP (a(4), 	a(9),  xor4w9);  	
 blk3_8:  	xor2_1 PORT MAP (a(3), 	a(8),  xor3w8);  	
 -- 2nd level XOR SIGNALS
-blk3_8_1:  			xor2_1 PORT MAP (xor3w8, 	a(1),  xor3w8w1);  	
+blk3_8_1:  		xor2_1 PORT MAP (xor3w8, 	a(1),  xor3w8w1);  	
 blk5_12_2:  		xor2_1 PORT MAP (xor5w12, 	a(2),  xor5w12w2);  	
 blk1_2_7_14:  		xor2_1 PORT MAP (xor1w2, 	xor7w14,  xor1w2w7w14);  	
-blk0_6_13_15:  	xor2_1 PORT MAP (xor0w6, 	xor13w15,  xor0w6w13w15);  
+blk0_6_13_15:  		xor2_1 PORT MAP (xor0w6, 	xor13w15,  xor0w6w13w15);  
 blk1_2_4_11:  		xor2_1 PORT MAP (xor1w2, 	xor4w11,  xor1w2w4w11);  	
 blk0_6_9_13:  		xor2_1 PORT MAP (xor0w6, 	xor9w13,  xor0w6w9w13);  	
 blk5_12_13_15:  	xor2_1 PORT MAP (xor5w12, 	xor13w15,  xor5w12w13w15);  	
-blk15_8_6_11:  	xor2_1 PORT MAP (xor15w8, 	xor6w11,  xor15w8w6w11);  	
+blk15_8_6_11:  		xor2_1 PORT MAP (xor15w8, 	xor6w11,  xor15w8w6w11);  	
 blk15_8_4_9:  		xor2_1 PORT MAP (xor15w8, 	xor4w9,  xor15w8w4w9);  	
 -- 3rd level XOR SIGNALS
 blk0_6_13_15_7_14: 	xor2_1 PORT MAP (xor0w6w13w15, 	xor7w14,  xor0w6w13w15w7w14);  	
